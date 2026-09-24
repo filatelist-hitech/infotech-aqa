@@ -24,7 +24,7 @@
 ├── docs/known-bugs.md
 └── docs/additional-login-scenarios.md
 ```
-docs/additional-login-scenarios.md
+
 `tests/Support/_generated/` создаётся командой `codecept build` и не хранится в Git.
 
 ## Запуск
@@ -32,8 +32,8 @@ docs/additional-login-scenarios.md
 Нужны PHP 8.2+, Composer, Chrome и WebDriver endpoint `127.0.0.1:4444`. На этом endpoint должен быть запущен ChromeDriver с URL base `/wd/hub` или Selenium Server.
 
 ```bash
-git clone <URL репозитория> autocrm-aqa-test
-cd autocrm-aqa-test
+git clone https://github.com/filatelist-hitech/infotech-aqa.git
+cd infotech-aqa
 composer install
 composer test
 ```
@@ -59,4 +59,5 @@ Base URL, браузер и WebDriver endpoint заданы в `tests/Acceptance
 ## Дополнительные кейсы и найденные баги 
 
 Дополнительные кейсы для проверки - ./docs/additional-login-scenarios.md
+
 Найденные баги - ./docs/known-bugs.md
