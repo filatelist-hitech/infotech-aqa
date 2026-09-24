@@ -1,0 +1,10 @@
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+            url: https://stellantis.autocrm.ru
+            browser: chrome
+            host: 127.0.0.1
+            port: 4444
+            window_size: 1920x1080
+        - Asserts

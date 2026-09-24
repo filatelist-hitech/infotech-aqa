@@ -1,0 +1,10 @@
+/vendor/
+/.env
+/.env.*
+!.env.example
+/tests/_output/
+/tests/Support/_generated/
+/.phpunit.cache/
+/.idea/
+/.vscode/
+.DS_Store

@@ -1,0 +1,35 @@
+{
+    "name": "infotek/autocrm-aqa-test",
+    "description": "Codeception WebDriver example for the AutoCRM login form",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.3",
+        "codeception/module-asserts": "^3.0",
+        "codeception/module-db": "^3.2",
+        "codeception/module-webdriver": "^4.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Support\\": "tests/Support/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@php vendor/bin/codecept build",
+            "@php vendor/bin/codecept run Acceptance"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.2.0"
+        },
+        "allow-plugins": {
+            "codeception/module-installer": true
+        }
+    }
+}
